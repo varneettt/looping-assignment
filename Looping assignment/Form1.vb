@@ -166,24 +166,24 @@ Public Class Form1
         'For x1 = -15 To 900 Step 50
         '    g.DrawRectangle(Pens.Purple, x * 500, -15, 30, 30)
 
-        'For x = -15 To 900 Step 50
-        '    For y = -15 To 500 Step 50
-        '        g.DrawRectangle(Pens.Purple, x, y, 30, 30)
-        '    Next
+        For x = 10 To 900 Step 50
+            For y = 10 To 500 Step 50
+                g.DrawRectangle(Pens.Purple, x, y, 30, 30)
+            Next
 
-        'Next
+        Next
 
         'For x1 = 20 To 900 Step 50
-        g.Clear(BackColor)
+        '    g.Clear(BackColor)
         For x = -15 To 900 Step 50
-            For y = -15 To 500 Step 50
-                Dim r As Integer = rand.Next(0, 256)
-                Dim gr As Integer = rand.Next(0, 256)
-                Dim b As Integer = rand.Next(0, 256)
-                Dim brush As New Pen(Color.FromArgb(r, gr, b))
-                g.DrawRectangle(brush, x, y, 30, 30)
+                For y = -15 To 500 Step 50
+                    Dim r As Integer = rand.Next(0, 256)
+                    Dim gr As Integer = rand.Next(0, 256)
+                    Dim b As Integer = rand.Next(0, 256)
+                    Dim brush As New Pen(Color.FromArgb(r, gr, b))
+                    g.DrawRectangle(brush, x, y, 30, 30)
+                Next
             Next
-        Next
 
 
 
